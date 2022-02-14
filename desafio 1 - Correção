@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Projeto - 01</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/74f5d82ab4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="embrulho">
+            <i class="fas fa-atom"></i>
+            <h3>Dolorsit</h3>
+        </div>
+    </header>
+    <main>
+            <section id="banner">
+                <div class="embrulho">
+                    <h1>O incentivo ao <br> lorem ipsum</h1>
+                    <p>Assim como a constante divulgação das informações</p>
+                    <a id= "botao"href="#">Clique aqui</a>
+                </div>
+        </section>
+        <section id="secao1">
+            <div class="embrulho">
+                <h2 class="titulo_secao">Titulo seção 1</h2>
+                <article class="artigo">
+                    <h3>Artigo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+                <article class="artigo">
+                    <h3>Artigo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+                <article class="artigo">
+                    <h3>Artigo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+            </div>
+        </section>
+        <section id="secao2">
+            <div class="embrulho">
+                <h2 class="titulo_secao">Titulo seção 2</h2>
+                <article class="artigo">
+                    <h3>Artigo 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+                <article class="artigo">
+                    <h3>Artigo 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+                <article class="artigo">
+                    <h3>Artigo 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, nobis! Repellat officiis labore ipsam explicabo dignissimos! Nulla recusandae tenetur quidem quam soluta unde, earum quis laboriosam maxime necessitatibus esse nam.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+styles.css
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Rubik&display=swap');
+/* CSS Reset geral e tag <a> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Formatação geral com CSS */
+/* No embrulho/wrapper precisamos definir uma largura e centralizar */
+.embrulho{
+    width: 1120px;
+    margin: 0 auto;
+
+}
+
+/* Estilo do Cabeçalho com CSS*/
+header{
+    background-color: #3c184e;
+}
+header > div{
+    display: flex;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+}
+header > div > h3 {
+    margin-left: 5px;
+}
+
+/* Estilo Banner com CSS */
+#banner{
+    padding: 64px 0;
+}
+h1{
+    font-family: 'Merriweather';
+    font-size: 64px;
+    color: #3c184e;
+}
+#banner > div > p{
+    font-family: 'Rubik', sans-serif;
+    color: #3c184e;
+    margin: 20 px 0 40px;
+
+}
+#botao{
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    background-color: #713fff;
+    padding: 12px 32px;
+    display: block;
+    width: 150px;
+    border-radius: 40px;
+}
+/* Estilo Seção 1 com CSS*/
+#secao1{
+    background: #713fff;
+    padding: 64px 0 0.1px;
+}
+.titulo_secao{
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+.artigo{
+    background-color: #3c184e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 64px;
+}
+.artigo > h3{
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.artigo > p{
+    font-family: 'Rubik', serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Estilo Rodapé com CSS */
+footer{
+    text-align: center;
+    background-color: #3c184e;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+/* Estilo Seção 2 com CSS */
+#secao2{
+    padding: 64px 0 0.1px;
+}
+#secao2 .titulo_secao{
+    color: #3c184e;
+    
+}
